@@ -23,8 +23,6 @@ Description: "Atemzüge des Patienten pro Minute."
 * value[x] only Quantity
 * valueQuantity = http://unitsofmeasure.org#/min        // UCUM pro Minute
 * valueQuantity ^sliceName = "valueQuantity"
-
-
-* subject only Reference(AKTIN_Patient)
+* subject only Reference(aktin-patient)
 * performer only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner) //REFERENCE AKTIN_Behandler
 * effective[x] only dateTime 

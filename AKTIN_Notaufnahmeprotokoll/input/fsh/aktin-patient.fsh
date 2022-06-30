@@ -14,9 +14,9 @@ Alias: $address-de-basis = http://fhir.de/StructureDefinition/address-de-basis
 
 //To define a profile, the declaration Profile and keyword Parent are REQUIRED, and Id, Title, and Description are RECOMMENDED. Rules defining the profile follow immediately after the keyword section.
 
-Profile: AKTINPatient
+Profile: AKTIN_Patient
 Parent: Patient
-Id: AKTINPatient
+Id: aktin-patient
 Description: "Dieses Profil beschreibt die Nutzung von administrativen Patientendaten im Rahmen des AKTIN-Notaufnahmeprotokolls."
 * ^experimental = true
 * ^date = "2022-06-26"
