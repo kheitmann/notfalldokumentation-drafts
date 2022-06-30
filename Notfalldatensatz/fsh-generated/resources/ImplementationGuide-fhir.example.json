@@ -1,0 +1,73 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.example",
+  "url": "http://example.org/ImplementationGuide/fhir.example",
+  "version": "0.1.0",
+  "name": "Notfalldatensatz",
+  "status": "draft",
+  "publisher": "DL",
+  "contact": [
+    {
+      "name": "DL",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.example",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AKTINPatient"
+        },
+        "name": "AKTINPatient",
+        "description": "Dieses Profil beschreibt die Nutzung von administrativen Patientendaten im Rahmen des AKTIN-Notaufnahmeprotokolls.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AbgeleiteteDatenZurWeitergabe"
+        },
+        "name": "Abgeleitete Daten zur Weitergabe",
+        "description": "Abgeleitete Daten sollen möglichst automatisch aus der Primärdokumentation abgeleitet werden und somit zusätzliche Benutzerinteraktion erhoben werden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/alter-in-nokeda-kategorien"
+        },
+        "name": "Alter in NoKeDa Kategorien",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
