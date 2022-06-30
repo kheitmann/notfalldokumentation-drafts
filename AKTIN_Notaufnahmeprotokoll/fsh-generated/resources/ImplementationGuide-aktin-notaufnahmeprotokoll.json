@@ -1,0 +1,89 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "aktin-notaufnahmeprotokoll",
+  "url": "http://example.org/ImplementationGuide/aktin-notaufnahmeprotokoll",
+  "version": "0.1.0",
+  "name": "AKTIN_Notaufnahmeprotokoll",
+  "status": "draft",
+  "publisher": "DL",
+  "contact": [
+    {
+      "name": "DL",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "aktin-notaufnahmeprotokoll",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/AKTINPatient"
+        },
+        "name": "AKTINPatient",
+        "description": "Dieses Profil beschreibt die Nutzung von administrativen Patientendaten im Rahmen des AKTIN-Notaufnahmeprotokolls.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyPatient"
+        },
+        "name": "MyPatient",
+        "description": "An example profile of the Patient resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/AbgeleiteteDatenZurWeitergabe"
+        },
+        "name": "Abgeleitete Daten zur Weitergabe",
+        "description": "Abgeleitete Daten sollen möglichst automatisch aus der Primärdokumentation abgeleitet werden und somit zusätzliche Benutzerinteraktion erhoben werden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/alter-in-nokeda-kategorien"
+        },
+        "name": "Alter in NoKeDa Kategorien",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "An example of a patient with a license to krill.",
+        "exampleCanonical": "http://example.org/StructureDefinition/MyPatient"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
