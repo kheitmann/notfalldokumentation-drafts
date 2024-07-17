@@ -6,6 +6,6 @@ FHIR Profile und Terminologien für die AKTIN Notfalldokumentation
 
 ## Autoren
 
-Kai Heitmann 2020-heute
+Kai Heitmann 2022-heute
 
-Dominik Ludmann 2020-2023
+Dominik Ludmann 2022
