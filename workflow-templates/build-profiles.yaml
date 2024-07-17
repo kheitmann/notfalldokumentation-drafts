@@ -1,0 +1,31 @@
+name: Generate FHIR Profiles from FSH
+
+on:
+  push:
+    paths:
+      - "**.fsh"
+      - "**/sushi-config.yaml"
+  workflow_dispatch:
+
+jobs:
+  build-profiles:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          path: profiles
+      - name: Get FHIR packages
+        uses: cybernop/fill-fhir-cache@v1
+        with:
+          project-dir: profiles
+      - name: Update FHIR Profiles
+        uses: cybernop/build-fhir-profiles@v1
+        with:
+          sushi-version: "3.11.0"
+          project-dir: profiles
+      - name: Push built Profiles
+        uses: cybernop/push-fsh-profiles@v1
+        with:
+          project-dir: profiles

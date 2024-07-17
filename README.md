@@ -1,7 +1,11 @@
-# AKTIN Notaufnahmeprotokoll
+# AKTIN Notfalldokumentation
 
-FHIR Profile
+FHIR Profile und Terminologien für die AKTIN Notfalldokumentation
+
+## AKTIN Notaufnahmeprotokoll
 
 ## Autoren
 
-Dominik Ludmann, Kai Heitmann
+Kai Heitmann 2020-heute
+
+Dominik Ludmann 2020-2023
