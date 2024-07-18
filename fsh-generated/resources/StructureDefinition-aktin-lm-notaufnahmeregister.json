@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "aktin-lm-notaufnahmeregister",
+  "url": "https://www.aktin.org/fhir/StructureDefinition/LogicalModel/Notaufnahmeregister",
+  "version": "2024.0.0-ballot",
+  "name": "AKTIN_LM_Notaufnahmeregister",
+  "title": "AKTIN LM Notaufnahmeregister",
+  "status": "draft",
+  "publisher": "AKTIN e.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.aktin.org"
+        }
+      ]
+    }
+  ],
+  "description": "AKTIN LogicalModel Notaufnahmeregister",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.aktin.org/fhir/StructureDefinition/LogicalModel/Notaufnahmeregister",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Notaufnahmeregister",
+        "path": "Notaufnahmeregister",
+        "short": "AKTIN LM Notaufnahmeregister",
+        "definition": "AKTIN LogicalModel Notaufnahmeregister"
+      }
+    ]
+  }
+}

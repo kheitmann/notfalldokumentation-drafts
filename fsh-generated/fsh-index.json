@@ -1,0 +1,10 @@
+[
+  {
+    "outputFile": "StructureDefinition-aktin-lm-notaufnahmeregister.json",
+    "fshName": "AKTIN_LM_Notaufnahmeregister",
+    "fshType": "Logical",
+    "fshFile": "aktin-lm-notaufnahmeregister.fsh",
+    "startLine": 1,
+    "endLine": 8
+  }
+]
