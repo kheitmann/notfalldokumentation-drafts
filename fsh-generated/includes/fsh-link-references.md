@@ -1,0 +1,1 @@
+[AKTIN_LM_Notaufnahmeregister]: StructureDefinition-aktin-lm-notaufnahmeregister.html

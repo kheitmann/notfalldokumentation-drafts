@@ -1,0 +1,2 @@
+Output File                                            Name                          Type     FSH File                          Lines
+StructureDefinition-aktin-lm-notaufnahmeregister.json  AKTIN_LM_Notaufnahmeregister  Logical  aktin-lm-notaufnahmeregister.fsh  1 - 8

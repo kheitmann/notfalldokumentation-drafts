@@ -1,0 +1,58 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "aktin-notaufnahmeprotokoll",
+  "url": "http://example.org/ImplementationGuide/aktin-notaufnahmeprotokoll",
+  "version": "0.1.0",
+  "name": "AKTIN_Notaufnahmeprotokoll",
+  "status": "draft",
+  "publisher": "DL",
+  "contact": [
+    {
+      "name": "DL",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "aktin-notaufnahmeprotokoll",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/aktin-lm-notaufnahmeregister"
+        },
+        "name": "AKTIN LM Notaufnahmeregister",
+        "description": "AKTIN LogicalModel Notaufnahmeregister",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
