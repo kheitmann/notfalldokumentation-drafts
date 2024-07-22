@@ -1,10 +1,16 @@
+# Basic workflow FHIR profile generation
+
 name: Generate FHIR Profiles from FSH
 
 on:
+  # Triggers the workflow on push events but only for the master branch
   push:
+    branches: [ master ]
     paths:
       - "**.fsh"
       - "**/sushi-config.yaml"
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
