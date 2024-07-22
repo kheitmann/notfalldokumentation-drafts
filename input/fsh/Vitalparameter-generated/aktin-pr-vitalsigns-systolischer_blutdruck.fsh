@@ -1,10 +1,12 @@
 // AKTIN Profil - Systolischer Blutdruck
 // https://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-systolischer_blutdruck
+// ART-DECOR SC DE 2.16.840.1.113883.2.6.60.3.2.9.11
 Profile: AKTIN_PR_vitalsigns_systolischer_blutdruck
 Parent:  Observation
 Id:      aktin-pr-vitalsigns-systolischer_blutdruck
 Title:   "Systolischer Blutdruck"
 Description: "Systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]"
+* ^url = "https://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-systolischer_blutdruck"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -20,11 +22,8 @@ Description: "Systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    LOINC 1..1 MS and
-    SNOMED-CT 1..1 MS
-* code.coding[LOINC] = $LNC#8480-6 "Systolic blood pressure"
-* code.coding[SNOMED-CT] = $SCT#271649006 "Systolic blood pressure (observable entity)"
-* code.coding[SNOMED-CT] = $SCT#72313002 "Systolic arterial pressure (observable entity)"
+    LOINC 1..1 MS
+* code.coding[LOINC] = $LOINC#8480-6 "Systolic blood pressure"
 * code.text =  "Systolischer Blutdruck"
 
 * value[x] only Quantity
@@ -36,3 +35,4 @@ Description: "Systolischer Blutdruck des Patienten in der Notaufnahme [mmHg]"
 * subject only Reference(AKTIN_PR_Patient)
 
 * effective[x] only dateTime
+

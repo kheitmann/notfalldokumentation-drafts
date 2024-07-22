@@ -3,7 +3,6 @@
 // ----------
 
 // CodeSystems
-Alias: $aktin-cs-alter-in-nokeda-kategorien = https://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-nokeda-kategorien
 
 // ValueSets
 
@@ -14,11 +13,14 @@ Alias: $aktin-cs-alter-in-nokeda-kategorien = https://aktin.org/fhir/CodeSystem/
 // HL7
 Alias: $FHIR-Version = 4.0.1
 Alias: $ExpandedYesNoIndicator = http://terminology.hl7.org/CodeSystem/v2-0532
+Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
 
 // DE Basisprofile
 Alias: $DeIcdSeitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
 Alias: $DeIcdDiagnosesicherheit = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT
 Alias: $icd-seitenlokalisation = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION
+Alias: $gender-amtlich-de = http://fhir.de/CodeSystem/gender-amtlich-de
+Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-basis
 
 // MII KDS
 Alias: $mii-procedure  = https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure 

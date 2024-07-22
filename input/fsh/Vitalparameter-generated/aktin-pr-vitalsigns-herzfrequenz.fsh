@@ -1,10 +1,12 @@
 // AKTIN Profil - Herzfrequenz
 // https://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-herzfrequenz
+// ART-DECOR SC DE 2.16.840.1.113883.2.6.60.3.2.9.12
 Profile: AKTIN_PR_vitalsigns_herzfrequenz
 Parent:  Observation
 Id:      aktin-pr-vitalsigns-herzfrequenz
 Title:   "Herzfrequenz"
 Description: "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet"
+* ^url = "https://www.aktin.org/fhir/StructureDefinition/aktin-pr-vitalsigns-herzfrequenz"
 * insert Meta
 * insert Version
 * insert Publisher
@@ -20,10 +22,8 @@ Description: "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    LOINC 1..1 MS and
-    SNOMED-CT 1..1 MS
-* code.coding[LOINC] = $LNC#8867-4 "Heart rate"
-* code.coding[SNOMED-CT] = $SCT#364075005 "Heart rate (observable entity)"
+    LOINC 1..1 MS
+* code.coding[LOINC] = $LOINC#76282-3 "Heart rate.beat-to-beat by EKG"
 * code.text =  "Herzfrequenz"
 
 * value[x] only Quantity
@@ -33,3 +33,4 @@ Description: "Herzfrequenz des Patienten [Schläge/min] per EKG abgeleitet"
 * subject only Reference(AKTIN_PR_Patient)
 
 * effective[x] only dateTime
+
