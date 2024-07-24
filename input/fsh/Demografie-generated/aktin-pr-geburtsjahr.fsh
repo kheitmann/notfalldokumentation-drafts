@@ -1,18 +1,19 @@
 // AKTIN Profil - Geburtsjahr
-// https://www.aktin.org/fhir/StructureDefinition/aktin-pr-geburtsjahr
-// ART-DECOR SC DE 2.16.840.1.113883.2.6.60.3.2.9.22063
+// http://www.aktin.org/fhir/StructureDefinition/aktin-pr-geburtsjahr
+// ART-DECOR Scenario/Dataset Item#: 2.16.840.1.113883.2.6.60.3.2.9.22063
 Profile: AKTIN_PR_geburtsjahr
 Parent:  Observation
 Id:      aktin-pr-geburtsjahr
 Title:   "Geburtsjahr"
 Description: "Geburtsjahr des Patienten"
-* ^url = "https://www.aktin.org/fhir/StructureDefinition/aktin-pr-geburtsjahr"
+* ^url = "http://www.aktin.org/fhir/StructureDefinition/aktin-pr-geburtsjahr"
 * insert Meta
 * insert Version
 * insert Publisher
 
 * identifier MS
 
+* category MS
 
 * code MS
 * code.coding MS
@@ -24,11 +25,13 @@ Description: "Geburtsjahr des Patienten"
 * code.coding[LOINC] = $LOINC#80904-6 "Birth year"
 * code.text =  "Geburtsjahr"
 
+* value[x] MS
 * value[x] only Date
 
-* subject MS
-* subject 1..1
-* subject only Reference(AKTIN_PR_Patient)
+* subject 1..1 MS
+* subject only Reference(Patient)
+  * ^short = "Nutzung von AKTIN_PR_Patient"
 
+* effective[x] 1..1 MS
 * effective[x] only dateTime
 

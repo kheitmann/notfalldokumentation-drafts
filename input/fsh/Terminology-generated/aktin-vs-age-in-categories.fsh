@@ -9,4 +9,4 @@ Description: "Alter in Kategorien"
 * ^caseSensitive = false
 * ^content = #complete
 
-* include codes from system alter-in-nokeda-kategorien
+* include codes from system https://aktin.org/fhir/CodeSystem/aktin-cs-alter-in-kategorien
